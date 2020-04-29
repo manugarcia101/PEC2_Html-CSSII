@@ -1,0 +1,45 @@
+.--art_section {
+  padding: 2vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+  
+.--border-bt {
+  border-bottom: 3px solid $big-letters;
+}
+  
+.--mall {
+  margin: 5vh;
+
+  @media screen and (min-width: $phone-size) {
+    margin-bottom: 1vh;
+  }
+}
+  
+.--ms {
+  margin-left: 2vh;
+  margin-right: 2vh;
+
+  @media screen and (min-width: $tablet-size) {
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
+  @media screen and (min-width: $tablet-size) {
+    margin-left: 10vh;
+    margin-right: 10vh;
+  }
+}
+  
+.--align-text {
+  text-align: center;
+}
+  
+.--half {
+  padding: 2%;
+
+  @media screen and (min-width: $tablet-size) {
+    float: left;
+    width: 50%;
+  }
+}

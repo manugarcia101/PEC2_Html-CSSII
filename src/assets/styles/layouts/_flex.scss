@@ -1,0 +1,131 @@
+// Diseño flex
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+.cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 300px;
+  flex: 1 1 300px;
+}
+  
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem;
+}
+  
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -webkit-filter: contrast(70%);
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  -o-transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+
+  @media screen and (min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%;
+    }
+  }
+}
+
+.card {
+  background-color: $white;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  
+  &:hover .card__image {
+    -webkit-filter: contrast(100%);
+    filter: contrast(100%);
+  }
+}
+  
+.card__image--actor1 {
+  background-image: url("../../assets/images/actor1.jpg");
+}
+  
+.card__image--actor2 {
+  background-image: url("../../assets/images/actor2.jpg");
+}
+
+.card__image--actor3 {
+  background-image: url("../../assets/images/actor3.jpg");
+}
+  
+.card__image--actor4 {
+  background-image: url("../../assets/images/actor4.jpg");
+}
+  
+.card__image--actor5 {
+  background-image: url("../../assets/images/actor5.jpg");
+}
+  
+.card__image--actor6 {
+  background-image: url("../../assets/images/actor6.jpg");
+}
+  
+.card__title {
+  text-align: center;
+  color: $gray-dark;
+  font-size: 1.25rem;
+  font-weight: $bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+  
+.card__name {
+  text-align: center;
+  color: $gray-dark;
+  font-size: 1.25rem;
+  font-weight: $light;
+}
+
+.card__text {
+  text-align: center;
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}

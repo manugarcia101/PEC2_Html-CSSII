@@ -1,0 +1,31 @@
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$main: rgba(255, 255, 255, 0.685);
+$big-letters: #fe670f;
+$text: #282828;
+
+$white: white;
+$gray-darker: #444;
+$gray-dark: #696;
+$gray: #999;
+$gray-light: #ccc;
+$gray-lighter:#ece;
+$gray-lightest: lighten($gray-lighter, 4%);
+$green: green;
+
+$xlight: 100;
+$light: 300;
+$regular: 600;
+$bold: 900;
+
+$min-width: 700px;
+$min-height: 400px;
+
+$phone-size: 400px;
+$tablet-size: 600px;
+$big-tablet-size: 800px;
+$small-laptop-size: 1000px;
+$big-laptop-size: 1200px;
